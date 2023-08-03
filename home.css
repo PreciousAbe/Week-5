@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body_container {
+  background-color: grey;
+  align-items: center;
+}
+section {
+  display: grid;
+  place-items: center;
+  color: #361d2e;
+  margin-top: 2rem;
+}
+
+section > h1 {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+section > h1 > span {
+  font-weight: 100;
+}
+
+section > p {
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.main_container {
+  background-color: rgb(246, 241, 241);
+  align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  border: 1px solid #361d2e;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+ul > li {
+  background-color: #593d3b;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  color: #fff;
+  flex-basis: 45%;
+  margin-bottom: 1rem;
+}
+ul > li > h2 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  padding: 1rem 0rem;
+  font-weight: 600;
+}
+ul > li > h2 > p {
+  margin-top: 1rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+input {
+  width: 70%;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  margin-left: 2.2rem;
+}
+.labelContent {
+  font-size: 1.3rem;
+}
+
+button {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+.addBtn {
+  background-color: #593d3b;
+  color: #fff;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.addBtn:hover,
+.addBtn:active {
+  background-color: #dfd5cb;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.removeBtn {
+  background-color: #dfd5cb;
+  margin: 1.5rem 0rem;
+  color: #fff;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 4px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.removeBtn:hover,
+.removeBtn:active {
+  cursor: pointer;
+  background-color: #fff;
+  color: #361d2e;
+  transition: all 0.5s ease-in;
+}
+
+/* medium screen */
+
+@media only screen and (max-width: 820px) {
+  section {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section > p {
+    font-size: 1rem;
+  }
+
+  .main_container {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 90%;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  input[type="text"] {
+    margin-left: 0.5rem;
+  }
+}
